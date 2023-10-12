@@ -1,0 +1,34 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: 0;
+	padding: 0;
+}
+section{
+	width: 100%;
+	height: 100vh;	
+}
+.cover img{
+	height: 623px;
+	width: 100%;
+	background-position: center;
+	background-attachment: fixed;
+	transition: 2s;
+	
+}
+.cover1 img{
+	position: absolute;
+	top: 36%;
+	left: 40%;
+	height: 300px;
+	width: 300px;
+	
+}
+
+.cover1 img:hover{
+	box-shadow: 10px 10px 10px black;
+}
+.cover img:hover{
+	filter: blur(2px);
+}
+

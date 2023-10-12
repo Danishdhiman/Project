@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: Consolas;
+	font-size: 70px;
+	background: black;
+}
+.glow{
+	margin: 10px;
+	padding: 0;
+	color: #262626;
+
+}
+.glow span{
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+	animation:glows 3s linear infinite;
+	letter-spacing: 6px;
+}
+.glow span:nth-child(1){
+	animation-delay: 0s;
+}.glow span:nth-child(2){
+	animation-delay: 0.2s;
+}.glow span:nth-child(3){
+	animation-delay: 0.3s;
+}.glow span:nth-child(4){
+	animation-delay: 0.4s;
+}.glow span:nth-child(5){
+	animation-delay: 0.5s;
+}.glow span:nth-child(6){
+	animation-delay: 0.6s;
+}
+
+@keyframes glows{
+	0%,100%{color: white;
+		filter: blur(2px);
+		text-shadow: 0 0 10px lawngreen,
+		 0 0 40px lawngreen,
+		 0 0 60px lawngreen,
+		 0 0 90px lawngreen,
+		 0 0 120px lawngreen,
+		 0 0 200px lawngreen;
+		}
+	5%,95%{
+		color: #353535;
+		filter:blur(0px);
+		text-shadow:  none;
+	}
+}
+.glow1{
+	margin: 0;
+	padding: 0;
+	color: #262626;
+
+}
+.glow1 span{
+	display: table-cell;
+	margin: 0;
+	padding: 0;
+	animation:glows1 3s linear infinite;
+	letter-spacing: 6px;
+}
+.glow1 span:nth-child(6){
+	animation-delay: 0s;
+}.glow1 span:nth-child(5){
+	animation-delay: 0.2s;
+}.glow1 span:nth-child(4){
+	animation-delay: 0.3s;
+}.glow1 span:nth-child(3){
+	animation-delay: 0.4s;
+}.glow1 span:nth-child(2){
+	animation-delay: 0.5s;
+}.glow1 span:nth-child(1){
+	animation-delay: 0.6s;
+
+}
+
+@keyframes glows1{
+	0%,100%{color:white;
+		filter: blur(2px);
+		text-shadow: 0 0 10px  magenta,
+		 0 0 40px  magenta,
+		 0 0 60px  magenta,
+		 0 0 90px  magenta,
+		 0 0 120px  magenta,
+		 0 0 200px  magenta;
+		}
+	5%,95%{
+		color: #353535;
+		filter:blur(0px);
+		text-shadow:  none;
+	}
+}
